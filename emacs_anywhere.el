@@ -1,7 +1,7 @@
 (defvar ea-popup-hook nil
   "Functions run after entering Emacs Anywhere session.
 Functions are run with args APP-NAME WINDOW-TITLE X Y WIDTH HEIGHT")
-
+(setq frame-title-format "Emacs Anywhere")
 (defvar ea-on t)
 (defvar ea-copy t)
 (defvar ea-paste t)
@@ -59,3 +59,4 @@ Functions are run with args APP-NAME WINDOW-TITLE X Y WIDTH HEIGHT")
                       ea-height))
 
 (ea--init)
+(flyspell-mode)
